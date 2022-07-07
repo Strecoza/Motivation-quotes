@@ -1,3 +1,5 @@
+gsap.from('.btn', {y:300, ease: "bounce", duration: 3, opacity: 0})
+
 const button= document.querySelector(".btn");
 const quotes= document.querySelector(".quotes");
 
