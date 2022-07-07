@@ -1,0 +1,75 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800");
+    background-repeat:  no-repeat;
+    background-position:  center;
+    background-size:  cover;
+    background-color: black;
+
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 70%;
+    height: 10%;
+    position: fixed;
+    padding: 10px;
+    background: rgb(221,106,129);
+    background: radial-gradient(circle, rgba(221,106,129,1) 0%, rgba(207,155,112,1) 100%);
+    border: 1px solid rgb(129, 135, 141);
+    border-radius: 2em;
+    font-size: 25px;
+    font-family: 'Libre Bodoni', serif;
+    margin-top: -4em;
+
+}
+    
+button:before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+    border-radius: 2em;
+	background: rgba(172, 43, 120, 0.203);
+	
+	transition: all 0.6s ease;
+}
+
+button:hover:before {
+	width: 100%;
+}
+
+.quotes{
+    display: none;
+    width: 70%;
+    text-align: center;
+    margin-top: 7em;
+    padding: 20px;
+    border-radius: 2em;
+    background: rgb(212,180,146);
+    background: radial-gradient(circle, rgba(212,180,146,1) 0%, rgba(221,106,129,1) 100%);
+    border: 1px solid rgb(129, 135, 141);
+    font-size: 23px;
+    font-family: 'Libre Bodoni', cursive;
+}
+
+
+@media all and (max-height: 450px){
+    .btn{
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width: 1200px){
+    .btn{
+        font-size: 40px;
+    }
+}
